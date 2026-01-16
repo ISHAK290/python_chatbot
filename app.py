@@ -59,7 +59,7 @@ def get_robo_response(user_response):
     return robo_response
 
 # --- FLASK ROUTE ---
-@app.route('/chat', methods=['POST'])
+@app.route('/')
 def chat():
     try:
         data = request.get_json()
